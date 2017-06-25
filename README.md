@@ -18,3 +18,10 @@ Recommended citation: FAO ... 2017
    R 3.3.3
    
    Rstudio 1.0.136
+
+# Clone and change the basic configuration parameters in 'master.R'
+    clonedir
+    
+    rootdir
+    
+    rawimgdir

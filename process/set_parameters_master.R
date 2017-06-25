@@ -9,14 +9,10 @@
 ####################################################################################
 options(stringsAsFactors=FALSE)
 
-rootdir <- "/home/dannunzio/Documents/k3_safe/"
-
-rawimgdir <- "/media/dannunzio/OSDisk/Users/dannunzio/Documents/k3_safe/"
+tile        <- "aoi"
 
 t1_dir    <- paste0(rootdir,"input_images/")
 t2_dir    <- paste0(rootdir,"input_images/")
-
-tile <- "aoi"
 
 training_dir <- paste0(rootdir,"pbs_aoi/")
 trainmanual_dir <- paste0(rootdir,"training_manual/")

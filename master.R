@@ -4,8 +4,17 @@
 ####### Update:  2017/06/05                                       
 ####################################################################################
 
-scriptdir <- "/home/dannunzio/Documents/scripts/scripts_k3/process/"
-p_procdir <- "/home/dannunzio/Documents/scripts/scripts_k3/pre-processing/"
+####### SET WHERE YOUR SCRIPTS ARE CLONED
+clonedir <- "/home/dannunzio/Documents/scripts/scripts_k3/"
+
+scriptdir <- paste0(clonedir,"process/")
+p_procdir <- paste0(clonedir,"/pre-processing/")
+
+####### SET WHERE YOUR PROCESSING DATA WILL BE CREATED AND STORED
+rootdir <- "/home/dannunzio/Documents/k3_safe/"  
+
+####### SET WHERE YOUR IMAGE DIRECTORY IS
+rawimgdir <- "/media/dannunzio/OSDisk/Users/dannunzio/Documents/k3_safe/"
 
 ####################################################################################
 #######          PACKAGES
@@ -34,7 +43,7 @@ source(paste0(p_procdir,"step5_histogram_match_single_band.R"),echo=TRUE)
 ####################################################################################
 time1       <- "q1"
 time2       <- "q2"
-tile        <- "aoi"
+
 
 t1_bands <- c(3,4,2) # NIR, RED, GREEN for Kompsat 3 data
 t2_bands <- c(3,4,2) # because of alphabetical order in merge
